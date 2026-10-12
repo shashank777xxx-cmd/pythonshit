@@ -1,0 +1,47 @@
+#calculator
+
+def addition (a,b):
+    sum=a+b
+
+def subtraction (a,b):
+    sub=a-b
+
+def multiplication (a,b):
+    mul=a*b 
+
+def division (a,b):
+    div=a/b
+
+def modulus (a,b):
+    mod=a%b
+
+print("Select operation.")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+print("5. Modulus")
+
+operation = input("Enter operation(1/2/3/4/5):")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if operation == '1':
+    addition(a,b)
+    print(a,"+",b,"=",a+b)
+
+elif operation == '2':
+    subtraction(a,b)
+    print(a,"-",b,"=",a-b)
+
+elif operation == '3':
+    multiplication(a,b)
+    print(a,"*",b,"=",a*b)
+
+elif operation == '4':
+    division(a,b)
+    print(a,"/",b,"=",a/b)
+
+elif operation == '5':
+    modulus(a,b)
+    print(a,"%",b,"=",a%b)
